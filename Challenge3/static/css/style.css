@@ -1,0 +1,13 @@
+.rps-wrapper {
+    border: solid 1px gray;
+    text-align: center;
+}
+
+.rps-img-box {
+    display: flex;
+    justify-content: space-around;
+}
+
+.rps-img-box img{
+    width: 20%;
+}
