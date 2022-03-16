@@ -62,12 +62,6 @@ function rpsFrontEnd(humanHand, cpHand, finalMessage){
     document.getElementById("paper").remove();
     document.getElementById("scissors").remove();
 
-    // var humanDiv = document.createElement('div');
-    // var cpDiv = document.createElement('div');
-    // var messageDiv = document.createElement('div');
-
-
-
     var humanHandImage = document.createElement('img');
     var cpHandImage = document.createElement('img');
     humanHandImage.setAttribute('src', rpsImageDatabase[humanHand]);
@@ -82,7 +76,16 @@ function rpsFrontEnd(humanHand, cpHand, finalMessage){
     // console.log(humanHandImage)
     // console.log(cpHandImage)
 
-    document.getElementById("rps-img-box").append(humanHandImage);
-    document.getElementById("rps-img-box").append(message);
-    document.getElementById("rps-img-box").append(cpHandImage);
+
+    var humanDiv = document.createElement('div');
+    var cpDiv = document.createElement('div');
+    var messageDiv = document.createElement('div');
+
+    humanDiv.append(humanHandImage);
+    cpDiv.append(cpHandImage);
+    messageDiv.append(message);
+
+    document.getElementById("rps-img-box").append(humanDiv);
+    document.getElementById("rps-img-box").append(messageDiv);
+    document.getElementById("rps-img-box").append(cpDiv);
 }
