@@ -3,11 +3,12 @@
     text-align: center;
 }
 
-.rps-img-box {
+#rps-img-box {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
-.rps-img-box img{
+#rps-img-box img{
     width: 20%;
 }

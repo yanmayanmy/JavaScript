@@ -9,6 +9,9 @@ function rpsGame(yourChoice){
     console.log(cpHand);
     console.log(final_result);
     console.log(message);
+    console.log();
+
+    rpsFrontEnd(humanHand, cpHand, message);
 
 }
 
@@ -42,8 +45,44 @@ function finalMessage([yourScore, cpScore]){
     if(yourScore === 1){
         return {"message" : "You won!!", "color" : "blue"};
     }else if(yourScore === 0.5){
-        return {"message" : "Draw", "color" : "yellow"};
+        return {"message" : "Draw", "color" : "gray"};
     }else{
         return {"message" : "You lost...", "color" : "red"};
     }
+}
+
+function rpsFrontEnd(humanHand, cpHand, finalMessage){
+    rpsImageDatabase = {
+        "rock" : document.getElementById("rock").src,
+        "paper" : document.getElementById("paper").src,
+        "scissors" : document.getElementById("scissors").src,
+    }
+
+    document.getElementById("rock").remove();
+    document.getElementById("paper").remove();
+    document.getElementById("scissors").remove();
+
+    // var humanDiv = document.createElement('div');
+    // var cpDiv = document.createElement('div');
+    // var messageDiv = document.createElement('div');
+
+
+
+    var humanHandImage = document.createElement('img');
+    var cpHandImage = document.createElement('img');
+    humanHandImage.setAttribute('src', rpsImageDatabase[humanHand]);
+    cpHandImage.setAttribute('src', rpsImageDatabase[cpHand]);
+
+    var message = document.createElement('h2');
+    message.innerHTML = finalMessage['message'];
+    message.setAttribute('style', 'color :' + finalMessage['color'] + ';' ); 
+
+
+
+    // console.log(humanHandImage)
+    // console.log(cpHandImage)
+
+    document.getElementById("rps-img-box").append(humanHandImage);
+    document.getElementById("rps-img-box").append(message);
+    document.getElementById("rps-img-box").append(cpHandImage);
 }
