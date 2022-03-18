@@ -8,7 +8,49 @@
     <title>Challenge</title>
 </head>
 <body>
+    <div class="contianer">
+        <h1>Challenge 5 : Blackjack</h1>
+        <h2><span id="game-result">Let's play.</span></h2>
 
+        <!-- Table -->
+        <div class="flex-blackjack-row-1">
+            <div class="your-box">
+                <h2>You : <span id ="your-score">0</span></h2>
+            </div>
+            <div class="dealer-box">
+                <h2>Dealer : <span id ="dealer-score">0</span></h2>
+            </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="flex-box-blackjack-row-2">
+            <div class="button-wrapper">
+                <button class="btn btn-primary">Hit</button>
+                <button class="btn btn-warning">Stand</button>
+                <button class="btn btn-danger">Deal</button>
+            </div>
+        </div>
+
+        <!-- Score box -->
+        <div class="flex-box-blackjack-row-3">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Wins</th>
+                        <th>Losses</th>
+                        <th>Draws</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="score-box-wins">0</td>
+                        <td id="score-box-losses">0</td>
+                        <td id="score-box-draws">0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 
     <!-- Own Script -->
     <script src="static/js/script.js"></script>
