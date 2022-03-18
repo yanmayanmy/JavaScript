@@ -8,7 +8,27 @@
     <title>Challenge</title>
 </head>
 <body>
-    
+    <div class="container challenge4-container">
+        <h2>Challenge 4 : Change the color of all buttons</h2>
+        <div class="flex-box-color-picker">        
+            <form action="#">
+                <select name="backdrop" id="background" onchange="btnColorChange(this)">
+                    <option value="random">Random</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="blue">Blue</option>
+                    <option value="gray">Gray</option>
+                    <option value="reset">Reset</option>
+                </select>
+            </form>
+            <button type="submit" class="btn btn-primary">Facebook</button>
+            <button type="submit" class="btn btn-danger">Yahoo</button>
+            <button type="submit" class="btn btn-success">Google</button>
+            <button type="submit" class="btn btn-secondary">Bing</button>
+        </div>
+    </div>
+
+    <!-- Own Script -->
     <script src="static/js/script.js"></script>
 </body>
 </html>

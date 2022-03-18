@@ -1,0 +1,14 @@
+.challenge4-container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-box-color-picker {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
