@@ -13,7 +13,10 @@ for (let i = 0; i < allButtons.length; i++) {
 console.log(copyAllButtons);
 
 function btnColorChange(buttonObj){
-    console.log(buttonObj.value);
+    //Deleting the css class which was giving the color to each buttons.
+    for (let i = 0; i < allButtons.length; i++) {
+        allButtons[i].classList.remove(allButtons[i].classList[1]);
+    }
 
     switch(buttonObj.value){
         case 'random':
@@ -33,13 +36,12 @@ function buttonsRandom(){
 }
 
 function buttonsReset(){
-
+    for (let i = 0; i < allButtons.length; i++) {
+        allButtons[i].classList.add(copyAllButtons[i]);        
+    }
 }
 
 function buttonsColored(buttonObj){
-    for (let i = 0; i < allButtons.length; i++) {
-        allButtons[i].classList.remove(allButtons[i].classList[1]);
-    }
     switch(buttonObj.value){
         case "blue":
             for (let i = 0; i < allButtons.length; i++) {
