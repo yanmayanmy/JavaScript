@@ -32,7 +32,11 @@ function btnColorChange(buttonObj){
 }
 
 function buttonsRandom(){
-
+    var randNum;
+    for (let i = 0; i < allButtons.length; i++) {
+        randNum = Math.floor(Math.random() * 4);
+        allButtons[i].classList.add(copyAllButtons[randNum]);        
+    } 
 }
 
 function buttonsReset(){
