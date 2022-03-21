@@ -1,0 +1,25 @@
+.blackjack-container-box {
+    text-align: center;
+}
+
+.flex-box-blackjack-row-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-box-blackjack-row-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-box-blackjack-row-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-box-blackjack-row-3 table td, th{
+    border: solid 1px rgb(128, 128, 128);
+}

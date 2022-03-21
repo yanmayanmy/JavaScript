@@ -8,12 +8,12 @@
     <title>Challenge</title>
 </head>
 <body>
-    <div class="contianer">
+    <div class="container blackjack-container-box">
         <h1>Challenge 5 : Blackjack</h1>
         <h2><span id="game-result">Let's play.</span></h2>
 
         <!-- Table -->
-        <div class="flex-blackjack-row-1">
+        <div class="flex-box-blackjack-row-1">
             <div class="your-box">
                 <h2>You : <span id ="your-score">0</span></h2>
             </div>
@@ -25,9 +25,9 @@
         <!-- Buttons -->
         <div class="flex-box-blackjack-row-2">
             <div class="button-wrapper">
-                <button class="btn btn-primary">Hit</button>
-                <button class="btn btn-warning">Stand</button>
-                <button class="btn btn-danger">Deal</button>
+                <button class="btn btn-primary" id="blackjack-hit-button">Hit</button>
+                <button class="btn btn-warning" id="blackjack-stand-button">Stand</button>
+                <button class="btn btn-danger" id="blackjack-deal-button">Deal</button>
             </div>
         </div>
 
@@ -43,9 +43,9 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td id="score-box-wins">0</td>
-                        <td id="score-box-losses">0</td>
-                        <td id="score-box-draws">0</td>
+                        <td><span id="score-box-wins">0</span></td>
+                        <td><span id="score-box-losses">0</span></td>
+                        <td><span id="score-box-draws">0</span></td>
                     </tr>
                 </tbody>
             </table>
