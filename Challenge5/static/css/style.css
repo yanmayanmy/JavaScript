@@ -1,11 +1,28 @@
 .blackjack-container-box {
     text-align: center;
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #0f9b0f, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0d460d 0%, #147c14 20%, #147c14 80%,  #0d460d 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 600px;
 }
 
 .flex-box-blackjack-row-1 {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+    height: 350px;
+    border: solid 3px #000000;
+    position: relative; /* for the middle line */
+}
+
+/* Middle Line in the Table */
+.flex-box-blackjack-row-1::before {
+    content: "";
+    position: absolute;
+    top: -3px; /* 3px is the width of the outline border  */
+    left: 50%;
+    width: 3px;
+    height: 350px;
+    background-color: #000000;
 }
 
 .flex-box-blackjack-row-2 {
@@ -21,5 +38,8 @@
 }
 
 .flex-box-blackjack-row-3 table td, th{
-    border: solid 1px rgb(128, 128, 128);
+    text-align: center;
+    padding: 5px 10px;
+    border: solid 1px #fff;
+    color: #fff;
 }
