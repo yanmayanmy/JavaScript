@@ -1,8 +1,8 @@
 .blackjack-container-box {
     text-align: center;
     background: #000000;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #0f9b0f, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #0d460d 0%, #147c14 20%, #147c14 80%,  #0d460d 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #0d460d 0%, #0f5e0f 20%, #0f5e0f 80%,  #0d460d 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #0d460d 0%, #0f5e0f 20%, #0f5e0f 80%,  #0d460d 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     height: 600px;
 }
 
@@ -13,6 +13,7 @@
     border: solid 3px #000000;
     position: relative; /* for the middle line */
 }
+
 
 /* Middle Line in the Table */
 .flex-box-blackjack-row-1::before {
@@ -42,4 +43,23 @@
     padding: 5px 10px;
     border: solid 1px #fff;
     color: #fff;
+}
+
+#your-box, #dealer-box{
+    width: 100%;
+    padding: 10px 20px;
+}
+
+#your-card, #dealer-card{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 15%;
+    float: left;
+    margin: 5px;
 }
