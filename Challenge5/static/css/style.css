@@ -38,19 +38,19 @@
     align-items: center;
 }
 
-.flex-box-blackjack-row-3 table td, th{
+.flex-box-blackjack-row-3 table td, th {
     text-align: center;
     padding: 5px 10px;
     border: solid 1px #fff;
     color: #fff;
 }
 
-#your-box, #dealer-box{
+#your-box, #dealer-box {
     width: 100%;
     padding: 10px 20px;
 }
 
-#your-card, #dealer-card{
+#your-card, #dealer-card {
     width: 100%;
     display: flex;
     justify-content: center;
