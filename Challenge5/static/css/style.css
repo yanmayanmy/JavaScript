@@ -1,8 +1,12 @@
+*{
+    color: rgb(211, 211, 211);
+}
+
 .blackjack-container-box {
     text-align: center;
     background: #000000;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #0d460d 0%, #0f5e0f 20%, #0f5e0f 80%,  #0d460d 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to right, #0d460d 0%, #0f5e0f 20%, #0f5e0f 80%,  #0d460d 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #0b3a0b 0%, #0d520d 20%, #0d520d 80%,  #0b3a0b 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #0b3a0b 0%, #0d520d 20%, #0d520d 80%,  #0b3a0b 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     height: 600px;
 }
 
