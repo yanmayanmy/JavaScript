@@ -26,6 +26,10 @@ containers.forEach(container =>{
     }
   })
 })
+/**
+ * Also, if the function takes only one argument you can omit ()
+ * ex.) e =>{ // Code... }
+ */
 
 function getDragAfterElement(container, y){
   
